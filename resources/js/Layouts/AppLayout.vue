@@ -122,7 +122,6 @@
                                                 Log Out
                                             </jet-dropdown-link>
                                         </form>
-
                                     </template>
                                 </jet-dropdown>
                             </div>
