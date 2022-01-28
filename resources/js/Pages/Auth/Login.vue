@@ -1,10 +1,10 @@
 <template>
     <Head title="Log in" />
 
-    <jet-authentication-card>
-        <template #logo>
-            <jet-authentication-card-logo />
-        </template>
+<!--    <jet-authentication-card>-->
+<!--        <template #logo>-->
+<!--            <jet-authentication-card-logo />-->
+<!--        </template>-->
 
         <jet-validation-errors class="mb-4" />
 
@@ -40,7 +40,7 @@
                 </jet-button>
             </div>
         </form>
-    </jet-authentication-card>
+<!--    </jet-authentication-card>-->
 </template>
 
 <script>
@@ -53,8 +53,12 @@
     import JetLabel from '@/Jetstream/Label.vue'
     import JetValidationErrors from '@/Jetstream/ValidationErrors.vue'
     import { Head, Link } from '@inertiajs/inertia-vue3';
+    import AuthenticationLayout from "../../Layouts/AuthenticationLayout";
 
     export default defineComponent({
+
+        layout: AuthenticationLayout,
+
         components: {
             Head,
             JetAuthenticationCard,

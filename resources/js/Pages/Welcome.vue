@@ -179,8 +179,12 @@
 <script>
     import { defineComponent } from 'vue'
     import { Head, Link } from '@inertiajs/inertia-vue3';
+    import AuthenticationLayout from "../Layouts/AuthenticationLayout";
 
     export default defineComponent({
+
+        layout: AuthenticationLayout,
+
         components: {
             Head,
             Link,
